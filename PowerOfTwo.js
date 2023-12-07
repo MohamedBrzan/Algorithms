@@ -13,3 +13,5 @@ console.log(IsPowerOfTwo(3));
 console.log(IsPowerOfTwo(4));
 console.log(IsPowerOfTwo(5));
 console.log(IsPowerOfTwo(6));
+
+//* Big-O = O(Logn)
