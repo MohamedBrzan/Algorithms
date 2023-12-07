@@ -11,3 +11,5 @@ console.log(isPrimeNumber(2));
 console.log(isPrimeNumber(3));
 console.log(isPrimeNumber(4));
 console.log(isPrimeNumber(5));
+
+//* Big-O = O(n)
