@@ -1,4 +1,4 @@
-function isPrimeNumber(n) {
+function IsPrimeNumber(n) {
   if (n < 2) return false;
   for (let i = 2; i < n; i++) {
     if (n % i === 0) return false;
@@ -6,10 +6,10 @@ function isPrimeNumber(n) {
   return true;
 }
 
-console.log(isPrimeNumber(1));
-console.log(isPrimeNumber(2));
-console.log(isPrimeNumber(3));
-console.log(isPrimeNumber(4));
-console.log(isPrimeNumber(5));
+console.log(IsPrimeNumber(1));
+console.log(IsPrimeNumber(2));
+console.log(IsPrimeNumber(3));
+console.log(IsPrimeNumber(4));
+console.log(IsPrimeNumber(5));
 
 //* Big-O = O(n)
