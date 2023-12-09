@@ -35,3 +35,23 @@ function Binary(n, t) {
 //* Big-O = O(logn)
 
 //*********************************** */
+
+function RecursiveBinarySearch(array, target) {
+  let firstIndex = 0;
+  let lastIndex = array.length - 1;
+  return search(array, target, firstIndex, lastIndex);
+}
+
+function search(array, target, firstIndex, lastIndex) {
+  let midIndex = Math.floor((firstIndex + lastIndex) / 2);
+  while (firstIndex <= lastIndex) {
+    if (target === array[midIndex]) return midIndex;
+    else if (target > midIndex)
+      return search(array, target, midIndex + 1, lastIndex);
+    else if (t < midIndex)
+      return search(array, target, firstIndex, midIndex - 1);
+  }
+  return -1;
+}
+
+console.log(RecursiveBinarySearch([-5, 2, 4, 6, 10], 10));
