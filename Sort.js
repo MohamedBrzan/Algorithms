@@ -13,9 +13,31 @@ function BubbleSort(array) {
   return array;
 }
 
-console.log(BubbleSort([-6, 20, 8, -2, 4]));
+// console.log(BubbleSort([-6, 20, 8, -2, 4]));
 
-//* Big-O = O(n^2)
+//* Big-O = O(n^2) Quadratic
 
 //******************************************** */
+
+//* Insertion Sort
+function InsertionSort(array) {
+  for (let i = 1; i < array.length; i++) {
+    let numberToInsert = array[i];
+    let j = i - 1;
+    while (j > 0 && numberToInsert < array[j]) {
+      array[j + 1] = array[j];
+      j--;
+    }
+    array[j + 1] = numberToInsert;
+  }
+
+  return array;
+}
+
+console.log(InsertionSort([-6, 20, 8, -2, 4]));
+
+//* Big-O = O(n^2) Quadratic
+
+//*********************************************** */
+
 
